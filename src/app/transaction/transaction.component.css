@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/src/assets/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.transaction-page {
+    background: #F9FAFB; 
+    padding: 16px;
+    height: 1000px;
+    border-top: 1px solid #1D2939;
+
+}
+
+.transaction-container {
+    gap: 19px;
+}
+
+.header-batch-name {
+    color: var(--gray-900, #101828);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.header-btns {
+    gap: 16px;
+}
+
+Button.header-btn {
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+}
+
+Button.decline {
+    border-radius: 4px;
+    background: var(--error-500-day, #EF4C4C);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--lightest-base-day, #FFF);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+Button.approve {
+    border-radius: 4px;
+    background: var(--primary-600-day, #1A595E);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--lightest-base-day, #FFF);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.total-amount-header {
+    color: var(--gray-500-day, #667085);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 13.319px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.027px;
+    letter-spacing: 0.266px;
+}
+
+.total-amount-figure {
+    color: var(--lightest-base-night, #101828);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 19.027px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.541px;
+}
+
+.date-container {
+    gap: 8px;
+}
+
+.total-transaction-container {
+    border-radius: 16px;
+    background: var(--primary-50-day, #F3F6F6);
+    mix-blend-mode: multiply;
+    padding: 4px 12px 4px 4px;
+    gap: 8px;
+    width: fit-content;
+}
+
+.total-transaction-figure {
+    border-radius: 16px;
+    background: var(--primary-600-day, #1A595E);
+    padding: 2px 8px;
+    color: var(--lightest-base-day, #FFF);
+    text-align: center;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.total-transaction-text {
+    color: var(--primary-700-day, #00464C);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.search-box {
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--base-white, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 10px 14px;
+    gap: 8px;
+}
+
+input {
+    border: none;
+    width: 320px;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.table-container {
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.table-container::-webkit-scrollbar {
+    display: none;
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+
+th,
+td {
+    color: var(--gray-900-day, #101828);
+    font-family: 'Satoshi', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 16px 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+td {
+    font-weight: 400;
+}
+
+tr#head-row{
+    background: #f8f8f8;
+    position: sticky;
+    top: 0;
+    max-height: 300px
+
+}
+
+tr{
+    background: #fff;
+    border-top: 2px solid #F9FAFB;
+    border-bottom: 2px solid #F9FAFB;
+}
+
+p.pending{
+    border-radius: 16px;
+background: var(--warning-50-day, #FFFAEB);
+color: var(--warning-700-day, #B56508);
+text-align: center;
+font-family: 'Satoshi', sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px;
+display: flex;
+padding: 2px 8px;
+margin-bottom: 0;
+justify-content: center;
+align-items: center;
+width: fit-content;
+
+}

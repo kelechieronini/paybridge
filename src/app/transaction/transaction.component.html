@@ -1,0 +1,71 @@
+<div class="transaction-page">
+  <div class="transaction-container d-flex flex-column">
+    <div class="transaction-header d-flex justify-content-between">
+      <div class="header-batch-name">Batch name here</div>
+      <div class="header-btns d-flex">
+        <Button class="header-btn decline flex-grow-1"
+          >Decline<img src="\assets\sidebar icons\x.svg" alt="" /></Button
+        ><Button class="header-btn approve flex-grow-1"
+          >Approve<img src="\assets\sidebar icons\check.svg" alt=""
+        /></Button>
+      </div>
+    </div>
+    <div class="total-amount-container">
+      <div class="total-amount-header">Total amount</div>
+      <div class="total-amount-figure">NGN {{ totalAmount.toLocaleString() }}</div>
+    </div>
+
+    <div class="date-container d-flex">
+        <div class="date">{{ currentDate }}</div>
+        <div class="time">• {{ currentTime }}</div>
+    </div>
+
+    <div class="total-transaction-container d-flex align-items-center">
+      <div
+        class="total-transaction-figure d-flex justify-content-between align-items-center"
+      >
+      {{ totalTransactions }}
+      </div>
+      <div
+        class="total-transaction-text d-flex justify-content-between align-items-center"
+      >
+      Total transactions
+      </div>
+    </div>
+
+    <div class="search-container d-flex justify-content-between">
+      <div class="search-box d-flex align-items-center">
+        <div class="search-icon">
+          <img src="\assets\transaction-icons\search-lg.svg" alt="" />
+        </div>
+        <input type="search" [(ngModel)]="searchText" placeholder="Search" />
+      </div>
+    </div>
+
+    <div class="table-container">
+        <table class="w-100">
+            <thead>
+                <tr id="head-row">
+                    <th>Name</th>
+                    <th>Bank name</th>
+                    <th>Account number</th>
+                    <th>Amount</th>
+                    <th>Date created</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let transaction of filteredTransactions">
+                    <td>{{ transaction.name }}</td>
+                    <td>{{ transaction.bankName }}</td>
+                    <td>{{ transaction.accountNumber }}</td>
+                    <td>N{{ transaction.amount.toLocaleString() }}</td>
+                    <td>{{ transaction.dateCreated }}</td>
+                    <td><p class="pending">{{ transaction.status }}</p></td>
+                  </tr>
+
+            </tbody>
+        </table>
+    </div>
+  </div>
+</div>

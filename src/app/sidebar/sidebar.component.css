@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/src/assets/fonts/HelveticaNowDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.sidebar {
+    width: 190px;
+    padding: 24px 16px 16px 16px;
+    border: 1px solid #1D2939;
+    background: #F9FAFB;
+    height: 1000px;
+}
+
+.sidebar-container {
+    gap: 48px;
+}
+
+.sidebar-brand-name {
+    color: #000;
+    font-family: 'Helvetica Now Display', sans-serif ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.sidebar-close-button{
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    gap: 8px;
+}
+
+.sidebar-menu-item {
+    gap: 12px;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--gray-400-day, #98A2B3);
+}
+
+.sidebar-menu-item .active{
+    font-weight: 500;
+    color: #101828;
+}
