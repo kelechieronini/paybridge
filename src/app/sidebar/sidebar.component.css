@@ -21,14 +21,14 @@
 
 .sidebar-brand-name {
     color: #000;
-    font-family: 'Helvetica Now Display', sans-serif ;
+    font-family: 'Helvetica Now Display', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
 }
 
-.sidebar-close-button{
+.sidebar-close-button {
     cursor: pointer;
 }
 
@@ -43,7 +43,7 @@
     color: var(--gray-400-day, #98A2B3);
 }
 
-.sidebar-menu-item .active{
+.sidebar-menu-item .active {
     font-weight: 500;
     color: #101828;
 }

@@ -36,13 +36,13 @@
     line-height: 24px;
 }
 
-img.dropdown{
+img.dropdown {
     cursor: pointer;
 }
 
 .header-buttons {
     gap: 12px;
-    
+
 }
 
 .quick-actions button {

@@ -41,8 +41,6 @@ export class TransactionComponent implements OnInit {
     });
   }
 
-
-
   transactions: Transaction[] = [
     {
       name: 'January',
@@ -150,7 +148,8 @@ export class TransactionComponent implements OnInit {
   }
 
   private parseAmount(amount: string | number): number {
-    const amountString = typeof amount === 'string' ? amount.replace(/,/g, '') : String(amount);
+    const amountString =
+      typeof amount === 'string' ? amount.replace(/,/g, '') : String(amount);
     return parseFloat(amountString);
   }
 
@@ -165,8 +164,6 @@ export class TransactionComponent implements OnInit {
       )
     );
   }
-
-
 
   private fieldsToSearch: (keyof Transaction)[] = [
     'name',
